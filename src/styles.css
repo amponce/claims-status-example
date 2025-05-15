@@ -1,0 +1,44 @@
+/**
+ * VA Application Template - Core Styles
+ * 
+ * This stylesheet imports the necessary VA Design System resources
+ * and defines essential custom styles for the application.
+ */
+
+/* Core VA Design System styles */
+@import "https://cdn.jsdelivr.net/npm/@department-of-veterans-affairs/component-library/dist/main.css";
+@import "https://cdn.jsdelivr.net/npm/@department-of-veterans-affairs/formation/dist/formation.min.css";
+@import "https://cdn.jsdelivr.net/npm/@department-of-veterans-affairs/css-library/dist/stylesheets/utilities.css";
+
+/* Header styling */
+header#header {
+  background: #112e51;
+}
+
+/* Accessibility: Focus styles for better keyboard navigation */
+[contentEditable="true"]:focus,
+[href]:focus,
+[tabindex]:focus,
+iframe:focus {
+  outline: 2px solid var(--vads-color-action-focus-on-light);
+}
+
+/* Typography improvements */
+h1 {
+  hyphens: auto;
+}
+
+/* Helper classes */
+.no-bullets {
+  list-style: none !important;
+  padding-left: 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  /* Add responsive adjustments as needed */
+  .usa-width-two-thirds,
+  .usa-width-one-third {
+    width: 100%;
+  }
+}
